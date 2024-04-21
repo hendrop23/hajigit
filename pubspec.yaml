@@ -10,6 +10,9 @@ dependencies:
   flutter_svg: ^2.0.9
   flutter_svg_provider: ^1.0.7
   intl: ^0.18.0
+  flutter_localizations: 
+    sdk: flutter
+  connectivity_plus: ^5.0.2
 dev_dependencies: 
   flutter_test: 
     sdk: flutter
@@ -27,3 +30,13 @@ flutter:
           weight: 500
         - asset: assets/fonts/MontserratRomanExtraBold.ttf
           weight: 800
+        - asset: assets/fonts/MontserratRomanBlack.ttf
+          weight: 900
+    - family: Mochiy Pop One
+      fonts: 
+        - asset: assets/fonts/MochiyPopOneRegular.ttf
+          weight: 400
+    - family: MuseoModerno
+      fonts: 
+        - asset: assets/fonts/MuseoModernoBold.ttf
+          weight: 700

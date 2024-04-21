@@ -7,12 +7,17 @@ import 'package:flutter_svg_provider/flutter_svg_provider.dart' as fs;
 import 'package:flutter/material.dart';
 import 'package:farizi_s_application3/core/app_export.dart';
 
-class PilihBahasaScreen extends StatelessWidget {
+class PilihBahasaScreen extends StatefulWidget {
   PilihBahasaScreen({Key? key})
       : super(
           key: key,
         );
 
+  @override
+  State<PilihBahasaScreen> createState() => _PilihBahasaScreenState();
+}
+
+class _PilihBahasaScreenState extends State<PilihBahasaScreen> {
   List<String> dropdownItemList = [
     "English",
     "Indonesian",
@@ -43,7 +48,7 @@ class PilihBahasaScreen extends StatelessWidget {
                         width: 360.h,
                         alignment: Alignment.center,
                       ),
-                      CustomOutlinedButton(
+                     CustomOutlinedButton(
                         width: 90.h,
                         text: "NEXT",
                         margin: EdgeInsets.only(
@@ -52,12 +57,18 @@ class PilihBahasaScreen extends StatelessWidget {
                         ),
                         rightIcon: Container(
                           margin: EdgeInsets.only(left: 4.h),
-                          child: CustomImageView(
+                          child: 
+                           GestureDetector(
+          onTap: () {
+            // Add your navigation logic here
+            Navigator.pushNamed(context, AppRoutes.page2OptionThreeScreen);
+          },
+          child: CustomImageView(
                             imagePath: ImageConstant.imgArrowleft,
                             height: 27.v,
                             width: 28.h,
                           ),
-                        ),
+                        ),),
                         alignment: Alignment.bottomRight,
                         color:Colors.white,
                       ),
@@ -107,35 +118,28 @@ PreferredSizeWidget _buildAppBar(BuildContext context) {
     title: Padding(
       padding: EdgeInsets.only(left: 12.h),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start, // Teks berada di sebelah kiri
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min, // Set mainAxisSize to min
         children: [
-          SizedBox(height: 8.v), // Jarak dari atas
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min, // Gunakan ukuran minimum agar tidak memperluas Column ke arah vertikal
-              children: [
-                AppbarTitle(
-                  text: "Welcome",
-                ),
-                SizedBox(height: 0.v),
-                AppbarSubtitle(
-                  text: "Hajj Elev.",
-                  margin: EdgeInsets.only(right: 32.h),
-                ),
-              ],
-            ),
+          SizedBox(height: 8.v),
+          AppbarTitle(
+            text: "Welcome",
+          ),
+          SizedBox(height: 0.v),
+          AppbarSubtitle(
+            text: "Hajj Elev.",
+            margin: EdgeInsets.only(right: 32.h),
           ),
         ],
       ),
     ),
     actions: [
-      SizedBox(height: 8.v), // Jarak dari atas
+      SizedBox(height: 8.v),
       AppbarTrailingDropdown(
         margin: EdgeInsets.only(
           left: 12.h,
           right: 12.h,
-          bottom: 16.v, // Pindahkan ke bawah
+          bottom: 16.v,
         ),
         hintText: "Pilih Bahasa",
         items: dropdownItemList,
@@ -144,7 +148,6 @@ PreferredSizeWidget _buildAppBar(BuildContext context) {
     ],
   );
 }
-
 
 
   /// Section Widget
@@ -172,7 +175,7 @@ PreferredSizeWidget _buildAppBar(BuildContext context) {
           children: [
             SizedBox(height: 75.v),
             Text(
-              "Hajj Elev.",
+              "Hajj Elev",
               style: CustomTextStyles.titleLargeExtraBold,
             ),
           ],
