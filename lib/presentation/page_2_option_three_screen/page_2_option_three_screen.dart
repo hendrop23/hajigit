@@ -240,12 +240,17 @@ class Page2OptionThreeScreen extends StatelessWidget {
         child: Stack(
           alignment: Alignment.bottomCenter,
           children: [
-            CustomImageView(
+             GestureDetector(
+          onTap: () {
+            // Add your navigation logic here
+            Navigator.pushNamed(context, AppRoutes.nextPageScreen1);
+          },
+          child: CustomImageView(
               imagePath: ImageConstant.img1cc4bb48bd28838,
               height: 73.v,
               width: 78.h,
               alignment: Alignment.topCenter,
-            ),
+            ),),
             Align(
               alignment: Alignment.bottomCenter,
               child: Container(
@@ -293,7 +298,7 @@ class Page2OptionThreeScreen extends StatelessWidget {
           itemText = "Wajib Haji";
           itemImagePath = ImageConstant.img3dc301d2f4329e3;
           onTap = () {
-      Navigator.pushNamed(context, AppRoutes.larangannIhramScreen);
+      Navigator.pushNamed(context, AppRoutes.nextPageScreen);
     };
         } else if (index == 2) {
           itemText = "Tata Cara";

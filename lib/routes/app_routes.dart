@@ -7,6 +7,8 @@ import 'package:farizi_s_application3/presentation/larangann_ihram_screen/larang
 import 'package:farizi_s_application3/presentation/next_page_one_screen/next_page_one_screen.dart';
 import 'package:farizi_s_application3/presentation/hak_jemaah_screen/hak_jemaah_screen.dart';
 import 'package:farizi_s_application3/presentation/tata_cara_haji_wanita_screen/tata_cara_haji_wanita_screen.dart'; // ignore_for_file: must_be_immutable
+import 'package:farizi_s_application3/presentation/next_page_screen1/next_page_screen1.dart'; // ignore_for_file: must_be_immutable
+import 'package:farizi_s_application3/presentation/next_page_screen/next_page_screen.dart'; // ignore_for_file: must_be_immutable
 
 
 class AppRoutes {
@@ -29,8 +31,13 @@ static const String hikmahHajiScreen = '/hikmah_haji_screen';
 
   static const String hakJemaahScreen = '/hak_jemaah_screen';
 
+static const String nextPageScreen1 = '/next_page_screen1';
+
+static const String nextPageScreen = '/next_page_screen';
 
   static Map<String, WidgetBuilder> routes = {
+    nextPageScreen1: (context) => NextPageScreen1(),
+    nextPageScreen: (context) => NextPageScreen(),
      tataCaraHajiWanitaScreen: (context) => TataCaraHajiWanitaScreen(),
     hakJemaahScreen: (context) => HakJemaahScreen(),
     hikmahHajiScreen: (context) => HikmahHajiScreen(),

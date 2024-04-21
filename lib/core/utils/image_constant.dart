@@ -45,7 +45,27 @@ static String imgGroup47 = '$imagePath/img_group_47.svg';
 // Hak Jemaah images
   static String imgOouiNextLtr = '$imagePath/img_ooui_next_ltr.svg';
 
+static String imgDc0d6c6dc8cd839 = '$imagePath/img_dc0d6c6dc8cd839.png';
+
+  static String imgE2ef43e4017d2d2 = '$imagePath/img_e2ef43e4017d2d2.png';
+
+  static String img2032a79b08bfa91 = '$imagePath/img_2032a79b08bfa91.png';
+
+  static String img1cd82c32b1d0fb3 = '$imagePath/img_1cd82c32b1d0fb3.png';
+
   static String img7313c537750bcce = '$imagePath/img_7313c537750bcce.png';
+
+  static String imgRectangle13 = '$imagePath/img_rectangle_13.png';
+
+  static String imgZigZag = '$imagePath/img_zig_zag.svg';
+
+  static String imgDocumentsAmico = '$imagePath/img_documents_amico.svg';
+
+  static String imgRectangle15 = '$imagePath/img_rectangle_15.png';
+
+  static String imgRectangle16 = '$imagePath/img_rectangle_16.png';
+
+  static String imgRectangle17 = '$imagePath/img_rectangle_17.png';
 
 // LARANGANN IHRAM  images
   static String imgD322453e255fc68 = '$imagePath/img_d322453e255fc68.png';
