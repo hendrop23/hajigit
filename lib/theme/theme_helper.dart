@@ -66,11 +66,44 @@ class ThemeHelper {
 /// Class containing the supported text theme styles.
 class TextThemes {
   static TextTheme textTheme(ColorScheme colorScheme) => TextTheme(
-        headlineSmall: TextStyle(
-          color: appTheme.whiteA700,
-          fontSize: 25.fSize,
+     displayMedium: TextStyle(
+          color: appTheme.cyan300,
+          fontSize: 45.fSize,
+          fontFamily: 'Mochiy Pop One',
+          fontWeight: FontWeight.w400,
+          shadows: [
+            Shadow(
+              color: const Color.fromARGB(255, 0, 0, 0).withOpacity(0.5), // warna merah dengan opasitas 50%
+              offset: Offset(2, 2),
+              blurRadius: 4,
+            ),
+          ],
+        ),
+         labelLarge: TextStyle(
+          color: appTheme.cyan300,
+          fontSize: 13.fSize,
           fontFamily: 'Montserrat',
-          fontWeight: FontWeight.w600,
+          fontWeight: FontWeight.w900,
+          shadows: [
+            Shadow(
+              color: Color.fromARGB(255, 0, 0, 0).withOpacity(0.5), // warna merah dengan opasitas 50%
+              offset: Offset(1, 1),
+              blurRadius: 2,
+            ),
+          ],
+        ),
+       headlineSmall: TextStyle(
+          color: appTheme.cyan300,
+          fontSize: 30.fSize,
+          fontFamily: 'MuseoModerno',
+          fontWeight: FontWeight.w700,
+          shadows: [
+            Shadow(
+              color: const Color.fromARGB(255, 0, 0, 0).withOpacity(0.5), // warna merah dengan opasitas 50%
+              offset: Offset(1, 1),
+              blurRadius: 2,
+            ),
+          ],
         ),
         titleLarge: TextStyle(
           color: appTheme.whiteA700,
@@ -85,12 +118,20 @@ class TextThemes {
           fontWeight: FontWeight.w500,
         ),
         titleSmall: TextStyle(
-          color: appTheme.whiteA700,
+          color: appTheme.black90011,
           fontSize: 15.fSize,
           fontFamily: 'Montserrat',
-          fontWeight: FontWeight.w600,
+          fontWeight: FontWeight.w900,
+          shadows: [
+            Shadow(
+              color: const Color.fromARGB(255, 0, 0, 0).withOpacity(0.5), // warna merah dengan opasitas 50%
+              offset: Offset(1, 1),
+              blurRadius: 2,
+            ),
+          ],
         ),
       );
+      
 }
 
 /// Class containing the supported color schemes.

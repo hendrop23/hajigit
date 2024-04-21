@@ -106,7 +106,7 @@ class Page2OptionThreeScreen extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 27.h),
+            padding: EdgeInsets.only(left: 10.h),
             child: Column(
               children: [
                 SizedBox(
@@ -144,9 +144,9 @@ class Page2OptionThreeScreen extends StatelessWidget {
                                     children: [
                                       CustomImageView(
                                         imagePath: ImageConstant.imgClose,
-                                        height: 24.v,
+                                        height: 10.v,
                                         width: 23.h,
-                                        margin: EdgeInsets.only(left: 63.h),
+                                        margin: EdgeInsets.only(left: 100.h),
                                       ),
                                       SizedBox(height: 122.v),
                                       Container(
@@ -411,7 +411,7 @@ class Page2OptionThreeScreen extends StatelessWidget {
           Card(
             clipBehavior: Clip.antiAlias,
             elevation: 0,
-            margin: EdgeInsets.only(left: 21.h),
+            margin: EdgeInsets.only(left: 5.h),
             color: appTheme.whiteA700,
             shape: RoundedRectangleBorder(
               side: BorderSide(
@@ -422,7 +422,7 @@ class Page2OptionThreeScreen extends StatelessWidget {
             ),
             child: Container(
               height: 95.v,
-              width: 183.h,
+              width: 125.h,
               padding: EdgeInsets.symmetric(horizontal: 42.h),
               decoration: AppDecoration.outlineCyan.copyWith(
                 borderRadius: BorderRadiusStyle.roundedBorder10,

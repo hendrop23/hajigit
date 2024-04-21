@@ -275,14 +275,16 @@ class TataCaraHajiWanitaScreen extends StatelessWidget {
                   Align(
                     alignment: Alignment.topCenter,
                     child: Container(
-                      width: 306.h,
+                      width: 400.h,
                       decoration: AppDecoration.outlineBlack9003f3,
                       child: Text(
                         "Tata Cara Haji Wanita",
                         maxLines: null,
                         overflow: TextOverflow.ellipsis,
+                         textAlign: TextAlign.center,
                         style: theme.textTheme.displayMedium!.copyWith(
-                          height: 1.20,
+                           fontSize: 24,
+                          height: 2,
                         ),
                       ),
                     ),
@@ -330,7 +332,7 @@ class TataCaraHajiWanitaScreen extends StatelessWidget {
             width: 338.h,
             decoration: AppDecoration.outlineBlack9003f1,
             child: Text(
-              "Syariat Islam telah mengatur ketentuan haji baik bagi bagi laki-laki maupun perempuan. Meski pada umumnya sama, ada sejumlah syarat khusus haji bagi wanita terlebih saat datang masa haid sebelum menyelesaikan rangkaian haji.\n Para ulama sepakat bahwa haji wajib hukumnya sekali seumur hidup bagi yang mampu. Haji diwajibkan pada akhir tahun 9 Hijriah, sebagaimana dikatakan Wahbah az-Zuhaili dalam Kitab Fiqhul Islam wa Adillatuhu.",
+              "Syariat Islam telah mengatur ketentuan haji baik bagi bagi laki-laki maupun perempuan. Meski pada umumnya sama, ada sejumlah syarat khusus haji bagi wanita terlebih saat datang masa haid sebelum menyelesaikan rangkaian haji.\nPara ulama sepakat bahwa haji wajib hukumnya sekali seumur hidup bagi yang mampu. Haji diwajibkan pada akhir tahun 9 Hijriah, sebagaimana dikatakan Wahbah az-Zuhaili dalam Kitab Fiqhul Islam wa Adillatuhu.",
               maxLines: null,
               overflow: TextOverflow.ellipsis,
               style: CustomTextStyles.labelLarge13.copyWith(
